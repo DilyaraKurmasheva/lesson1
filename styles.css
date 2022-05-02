@@ -37,15 +37,62 @@
 }
 
 .menu {
-    padding-right: 41px;
+    margin-right: 37px;
+    padding: 6px 6px 6px 6px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.menu:hover {
+    background-color: #E05C6E;
+}
+
+.menu:hover .menu_box {
+    display: flex;
+}
+
+.menu_box {
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    width: 220px;
+    position: absolute;
+    display: flex;
+    top: 38px;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    padding: 10px 10px 200px 20px;
+    display: none;
+
+}
+
+
+.menu_heading {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #F16D7F;
+    padding-top: 10px;
+}
+
+.menu_link {
+    display: block;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #6F6E6E;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    text-decoration: underline;
 }
 
 .profile {
     padding-right: 41px;
-}
-
-.label {
-    background: #F1E4E6;
 }
 
 .label_block {
@@ -76,13 +123,12 @@
 }
 
 .dir {
+    display: flex;
     position: relative;
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .dir_margin {
@@ -113,7 +159,10 @@
     color: #FFFFFF;
 }
 
-
+.dir_text a:hover {
+    text-decoration: none;
+    color: #f16d7f;
+}
 
 .colored_text {
     font-family: 'Lato';
@@ -122,13 +171,13 @@
     line-height: 35px;
     text-align: center;
     color: #f16d7f;
-<<<<<<< Updated upstream
-=======
 }
 
 .hover-this:hover span {
     color: #FFFFFF;
 }
+
+
 
 .item_section {
     margin-top: 96px;
@@ -152,25 +201,43 @@
     line-height: 17px;
     color: #9F9F9F;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .item_flex {
-    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item {
     background-color: #F8F8F8;
     position: relative;
+    width: 360px;
+    margin-top: 30px;
+
 }
 
 .item:hover .item_img {
     filter: brightness(30%);
 }
 
+.item:hover .add_to_cart_box {
+    display: flex;
+}
+
 .item_link {
     display: block;
     text-decoration: none;
+}
+
+.item_header:hover {
+    text-decoration: underline;
+}
+
+.item_text:hover {
+    text-decoration: underline;
 }
 
 .item_img {
@@ -214,14 +281,60 @@
 
 .add_to_cart_box {
     position: absolute;
-    display: flex;
-    border: 1px solid #fff;
-    top: 188px;
+    display: none;
+    top: 185px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+
 }
 
-.add_to_cart_item {}
+.add_to_cart_item {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    pointer-events: all;
+}
 
-.add_to_cart_txt {}
+.add_to_cart_txt {
+    padding-left: 12px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+}
+
+.browser_button_div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 63px;
+}
+
+.browse_button {
+    background: #E05C6E;
+    border-radius: 2px 2px 2px 2px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    height: 49px;
+    border: transparent;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.browse_button:hover {
+    background: #000;
+}
 
 .footer {
     background: #222224;
@@ -368,6 +481,12 @@
 }
 
 
+.links_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .copyright {
     font-family: 'Lato';
     font-style: normal;
@@ -377,5 +496,58 @@
     color: #FBFBFB;
     padding-top: 30px;
     padding-bottom: 30px;
->>>>>>> Stashed changes
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+.link {
+    display: block;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    margin-left: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.link_f {
+    background-image: url(img/f.png);
+}
+
+.link_i {
+    background-image: url(img/i.png);
+}
+
+.link_p {
+    background-image: url(img/p.png);
+}
+
+.link_t {
+    background-image: url(img/t.png);
+}
+
+.link:hover {
+    background-color: #E05C6E;
+}
+
+.link_f:hover {
+    background-image: url(img/fb.png);
+}
+
+.link_i:hover {
+    background-image: url(img/ib.png);
+}
+
+.link_p:hover {
+    background-image: url(img/pb.png);
+}
+
+.link_t:hover {
+    background-image: url(img/tb.png);
 }
