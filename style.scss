@@ -37,9 +37,7 @@
 }
 
 .menu {
-<<<<<<< Updated upstream:styles.css
     padding-right: 41px;
-=======
     margin-right: 37px;
     padding: 6px 6px 6px 6px;
     border-radius: 2px;
@@ -92,7 +90,7 @@
 
 .menu_link:hover {
     text-decoration: underline;
->>>>>>> Stashed changes:style.scss
+
 }
 
 .profile {
@@ -177,8 +175,7 @@
     line-height: 35px;
     text-align: center;
     color: #f16d7f;
-<<<<<<< Updated upstream:styles.css
-=======
+
 }
 
 .hover-this:hover span {
@@ -725,6 +722,10 @@ $nav_bg: #F8F3F4;
     text-decoration: none;
 }
 
+.filter_list a:hover {
+    text-decoration: underline;
+}
+
 .fa-angle-down {
     font-size: 14px;
     line-height: 17px;
@@ -768,5 +769,53 @@ $nav_bg: #F8F3F4;
 .checkbox {
     border: 1px solid #EBEBEB;
     margin-right: 5px;
->>>>>>> Stashed changes:style.scss
+}
+
+.pagination_box {
+    display: flex;
+    width: 100%;
+    margin-top: 63px;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.pag_item {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9F9F9F;
+}
+
+.pag_item:hover {
+    color: #9F9F9F;
+    text-decoration: underline;
+}
+
+.active {
+    color: $color_rose;
+}
+
+.ltgt {
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ltgt:hover {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
 }
