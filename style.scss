@@ -384,9 +384,9 @@
 .sea_bg {
     background-color: #efefef;
     background-image: url("img/sea_background.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    background-position: left;
+   
     min-height: 448px;
     background-position: left bottom;
 
@@ -991,4 +991,86 @@ $nav_bg: #F8F3F4;
     background-color: #fff;
     opacity: 70%;
     text-align: center;
+}
+
+/*registration*/
+.registration_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+    width:100%
+}
+.registration_form{
+    display: flex;
+    flex-direction: column;
+    width:35%;
+    min-width:360px;
+}
+.reg_label {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222; 
+    padding-top:33px;   
+}
+.reg_input{
+    border: 1px solid #A4A4A4;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    height: 45px;
+    width: 360px;
+    padding-left: 16px;
+    margin-top: 20px;
+}
+.form_txt{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 16px;
+    margin-bottom: 39px;
+}
+.reg_label span{
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.form_spacing
+{
+    width:10%;
+}
+.registration_information{
+    width:55%;
+    padding-top: 33px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+.join_now{
+padding-left:29px;
+
+width:130px;
+}
+.fa-arrow-right{
+padding-left:20px;
+}
+.reg_list{
+    list-style-image: url(img/list_item.png);
+    padding-left: 25px;
+    padding-top: 15px;
+   
+}
+.reg_list_item{
+    line-height: 50px;
+    padding-left: 10px;
 }
