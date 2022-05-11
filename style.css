@@ -389,6 +389,7 @@
 
 .browse_button:hover {
   background: #000;
+  cursor: pointer;
 }
 
 .footer {
@@ -570,6 +571,7 @@
 
 .subscribe_button:hover {
   background: #000;
+  cursor: pointer;
 }
 
 .links_box {
@@ -1131,6 +1133,35 @@
   background-color: #fff;
   opacity: 70%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.product_banner_header {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-align: center;
+  padding-top: 64px;
+}
+
+.line1 {
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*registration*/
@@ -1214,11 +1245,16 @@
 
 .join_now {
   padding-left: 29px;
-  width: 130px;
+  width: 160px;
+}
+
+.join_now:hover {
+  cursor: pointer;
 }
 
 .fa-arrow-right {
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .reg_list {
