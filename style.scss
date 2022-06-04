@@ -169,6 +169,92 @@
 
 }
 
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+
+.heartbeat {
+    -webkit-animation: heartbeat 6s 3s infinite both;
+    animation: heartbeat 6s 3s infinite both;
+}
+
 .catalogs_list {
     display: flex;
     justify-content: space-between;
@@ -265,6 +351,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-grow: 1;
+    margin-left: -5px;
+    margin-right: -5px;
+    ;
 }
 
 .item {
@@ -272,8 +361,13 @@
     position: relative;
     width: 360px;
     margin-top: 30px;
-
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
+
+
+
 
 .item:hover .item_img {
     filter: brightness(30%);
@@ -1247,13 +1341,16 @@ $nav_bg: #F8F3F4;
     padding-left: 10px;
 }
 
-@media (min-width:769px) and (max-width:1100px) {
+@media (min-width:769px) and (max-width:1126px) {
     .item_flex {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        flex-grow: 1;
+        justify-content: center;
     }
+
+
+
+
 }
 
 @media (max-width:768px) {
@@ -1270,6 +1367,7 @@ $nav_bg: #F8F3F4;
     .label_logo_img {
         width: 312px;
     }
+
 
     .label_foto {
         background-position: center center;
