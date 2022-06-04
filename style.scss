@@ -11,8 +11,11 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+<<<<<<< Updated upstream
     align-items: center;
 
+=======
+>>>>>>> Stashed changes
 
 }
 
@@ -171,6 +174,7 @@
 
 }
 
+<<<<<<< Updated upstream
 
 @-webkit-keyframes heartbeat {
     from {
@@ -257,6 +261,8 @@
     animation: heartbeat 6s 3s infinite both;
 }
 
+=======
+>>>>>>> Stashed changes
 .catalogs_list {
     display: flex;
     justify-content: space-between;
@@ -353,9 +359,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-grow: 1;
+<<<<<<< Updated upstream
     margin-left: -5px;
     margin-right: -5px;
 
+=======
+>>>>>>> Stashed changes
 }
 
 .item {
@@ -363,6 +372,7 @@
     position: relative;
     width: 360px;
     margin-top: 30px;
+<<<<<<< Updated upstream
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -370,6 +380,10 @@
 
 
 
+=======
+
+}
+>>>>>>> Stashed changes
 
 .item:hover .item_img {
     filter: brightness(30%);
@@ -658,6 +672,7 @@
     padding-bottom: 30px;
 }
 
+<<<<<<< Updated upstream
 .copyright_375 {
     display: none;
     font-family: 'Lato';
@@ -670,6 +685,8 @@
     padding-bottom: 30px;
 }
 
+=======
+>>>>>>> Stashed changes
 .links {
     display: flex;
     justify-content: space-between;
@@ -1147,12 +1164,19 @@ $nav_bg: #F8F3F4;
 .product_banner_container {
     position: relative;
     height: 600px;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
 
 .product_banner {
     position: absolute;
+<<<<<<< Updated upstream
     width: 100%;
+=======
+    width: 1140px;
+>>>>>>> Stashed changes
     z-index: 1;
     border: 1px solid #EAEAEA;
     top: -55px;
@@ -1221,7 +1245,11 @@ $nav_bg: #F8F3F4;
 }
 
 .product_banner_line_grey {
+<<<<<<< Updated upstream
     width: 60%;
+=======
+    width: 640px;
+>>>>>>> Stashed changes
     height: 1px;
     background-color: #c4c4c4;
     align-self: center;
@@ -1356,6 +1384,7 @@ $nav_bg: #F8F3F4;
     padding-left: 10px;
 }
 
+<<<<<<< Updated upstream
 @media (min-width:769px) and (max-width:1148px) {
     .item_flex {
         display: flex;
@@ -1366,6 +1395,15 @@ $nav_bg: #F8F3F4;
 
 
 
+=======
+@media (min-width:769px) and (max-width:1100px) {
+    .item_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+>>>>>>> Stashed changes
 }
 
 @media (max-width:768px) {
@@ -1383,7 +1421,10 @@ $nav_bg: #F8F3F4;
         width: 312px;
     }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     .label_foto {
         background-position: center center;
 
@@ -1467,6 +1508,7 @@ $nav_bg: #F8F3F4;
         flex-direction: column;
         width: 85%;
     }
+<<<<<<< Updated upstream
 
     .links_box {
         display: flex;
@@ -1486,4 +1528,6 @@ $nav_bg: #F8F3F4;
         padding-top: 43px;
 
     }
+=======
+>>>>>>> Stashed changes
 }
