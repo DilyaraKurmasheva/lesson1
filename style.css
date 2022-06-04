@@ -11,6 +11,9 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top_menu {
@@ -1251,7 +1254,7 @@
 
 .product_banner {
   position: absolute;
-  width: 1140px;
+  width: 100%;
   z-index: 1;
   border: 1px solid #EAEAEA;
   top: -55px;
@@ -1329,7 +1332,7 @@
 }
 
 .product_banner_line_grey {
-  width: 640px;
+  width: 60%;
   height: 1px;
   background-color: #c4c4c4;
   -ms-flex-item-align: center;
@@ -1475,7 +1478,7 @@
   padding-left: 10px;
 }
 
-@media (min-width: 769px) and (max-width: 1126px) {
+@media (min-width: 769px) and (max-width: 1148px) {
   .item_flex {
     display: -webkit-box;
     display: -ms-flexbox;
