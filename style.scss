@@ -1455,4 +1455,14 @@ $nav_bg: #F8F3F4;
         flex-direction: column;
         width: 85%;
     }
+
+    .links_box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .links {
+        padding-top: 43px;
+    }
 }
